@@ -120,7 +120,7 @@ client.on("message", (message) => {
  
        message.channel.send(`**هل انت متأكد من اقفالك للتذكرة اذا متأكد اكتب**||*close||`)
            .then((m) => {
-               message.channel.awaitMessages(response => response.content === '.confirm', {
+               message.channel.awaitMessages(response => response.content === '*close', {
                        max: 1,
                        time: 10000,
                        errors: ['time'],
