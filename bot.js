@@ -149,7 +149,7 @@ client.on('message', message => {
   let args = message.content.split(" ").slice(1);
 // By JàkeY#2019 And Toxic Codes
   if (command == "say") {
-  if (message.member.id !== "514857011113099289") return message.channel.send('**لا حبي ما يصير هيك 😂 , [Kobe Bot] **');// By JàkeY#2019 And Toxic Codes
+  if (message.member.id !== "562313255322779657") return message.channel.send('**لا حبي ما يصير هيك **');// By JàkeY#2019 And Toxic Codes
    message.channel.send(args.join("  "))// By JàkeY#2019 And Toxic Codes
    message.delete()// By JàkeY#2019 And Toxic Codes
   }
