@@ -15,9 +15,9 @@ client.user.setStatus("dnd")
 
 client.on("guildMemberAdd", member => {
   member.createDM().then(function (channel) {
-  return channel.send(`:rose:  ولكم نورت السيرفر:rose: 
-:crown:اسم العضو  ${member}:crown:  
-انت العضو رقم ${member.guild.memberCount} `) 
+  return channel.send(`**- Hello , [user] :cocktail: **
+**       - You Are in a Big Community :dove: **
+**              - Victoria ,! :black_heart:**`) 
 }).catch(console.error)
 })
 
