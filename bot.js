@@ -38,6 +38,12 @@ if(!message.channel.guild) return;
     }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'مين يلعب؟') {
+    msg.reply('انا العب ولا شي :)');
+  }
+});
+
 client.on('message', message => {
 var prefix = "*" // البريفكس
 if(message.content.startsWith(prefix +"server")){ // الامر
