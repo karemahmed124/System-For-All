@@ -64,7 +64,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'ترحيب') {
-    msg.reply('**<<<<<<< Welcome To Victoria ,!** :V_: **>>>>>>>**');
+    msg.reply('**<<<<<<< Welcome To Victoria ,! >>>>>>>**');
   }
 });
 
