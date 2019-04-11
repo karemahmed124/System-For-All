@@ -57,6 +57,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === '@Victoria , System') {
+    msg.reply('اتفضل حبي؟');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'ترحيب') {
     msg.reply('**<<<<<<< Welcome To Victoria ,! :V_: >>>>>>>**');
   }
