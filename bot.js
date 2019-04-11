@@ -44,6 +44,14 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === '@Victoria , System#4094 ') {
+    msg.reply('اتفضل اخوي ؟');
+  }
+});
+
+
+
 client.on('message', message => {
 var prefix = "*" // البريفكس
 if(message.content.startsWith(prefix +"server")){ // الامر
