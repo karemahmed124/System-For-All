@@ -132,6 +132,26 @@ client.on('message', message => {
     }
 });
 
+client.on('message', msg => {
+  if (msg.author.bot) return;
+  if (!msg.content.startsWith(prefix)) return;
+  let command = msg.content.split(" ")[0];
+  command = command.slice(prefix.length);
+
+  let args = msg.content.split(" ").slice(1);
+
+
+if (command == "*غرد") {
+    let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
+    .setAuthor(msg.author.username, msg.author.avatarURL)
+    .setDescription(args.join(" "))
+    .setFooter('© . :AG || Copyright')
+    msg.channel.sendEmbed(embed);
+    msg.delete();
+  }
+});
+
 client.on("message", (message) => {
 
    if (message.content.startsWith("*new")) {   
