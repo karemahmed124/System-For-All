@@ -141,17 +141,6 @@ client.on('message', msg => {
   let args = msg.content.split(" ").slice(1);
 
 
-if (command == "*غرد") {
-    let embed = new Discord.RichEmbed()
-    .setColor('RANDOM')
-    .setAuthor(msg.author.username, msg.author.avatarURL)
-    .setDescription(args.join(" "))
-    .setFooter('© . :AG || Copyright')
-    msg.channel.sendEmbed(embed);
-    msg.delete();
-  }
-});
-
 client.on("message", (message) => {
 
    if (message.content.startsWith("*new")) {   
