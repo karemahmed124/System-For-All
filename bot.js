@@ -46,11 +46,45 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'اسلام عليكم') {
-    msg.reply('وعليكم اسلام <3');
+    msg.reply('وعليكم اسلام :heart: ');
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'شعار السيرفر') {
+    msg.reply('『 VIC』');
+  }
+});
 
+client.on('message', msg => {
+  if (msg.content === 'ترحيب') {
+    msg.reply('**<<<<<<< Welcome To Victoria ,! :V_: >>>>>>>**');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'صباح الخير') {
+    msg.reply('صباح العسل :honey_pot: ');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'برب') {
+    msg.reply('تييتء');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'باك') {
+    msg.reply('ولكم ي حب :heart:');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '.') {
+    msg.reply(':honey_pot:طاحت منك نقطة عسل ');
+  }
+});
 
 client.on('message', message => {
 var prefix = "*" // البريفكس
